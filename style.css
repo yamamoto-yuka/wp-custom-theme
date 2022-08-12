@@ -10,6 +10,20 @@ body{
   margin: 0;
 }
 
+h1,h2,h2,h4,h5,h6{
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .hero-cta{
   margin-top: 50px;
 }
@@ -59,21 +73,20 @@ body{
   margin: 15px;
 }
 
-.single-practice-areas h1{
+.single-practice-areas .content .elementor-column-wrap, .single-team .content .elementor-column-wrap{
+  padding: 10px;
+ }
+
+ .single-practice-areas .content h1, .single-team .content h1{
   color:  var( --e-global-color-primary);
   font-size: 2rem;
-}
-
-.single-practice-areas h3{
+ }
+ .single-practice-areas .content h3 {
   font-size: 1.5rem;
-}
+ }
 
 .single-practice-areas  a{
   text-decoration: none;
-}
-
-.form-title, .form-description{
-  text-align: center;
 }
 
 .staff .image-wrapper img{
@@ -94,7 +107,7 @@ body{
  color: #333;
 }
 
-.staff .team-member-info h3{
+.staff .team-member-info h3, .single-team .content h2{
   margin: 0;
   color: rgba(0,0,0,.5);
   font-family: var(--e-global-typography-text-font-family);
@@ -106,8 +119,26 @@ body{
 
 .staff .elementor-column{
   margin-bottom: 50px;
+  padding: 10px;
 }
 
-.elemntor-widget-wrap{
-  margin: 10px;
+.team-section{
+  column-count:2;
+}
+
+.single-team .contact-links i{
+  margin: 0 5px;
+}
+@media only screen and (max-width:767px) {
+  .team-section{
+    column-count:1;
+  }
+
+  .subheader{
+    display: none;
+  }
+
+  .e--ua-appleWebkit .elementor-grid-0.elementor-widget-social-icons.e-grid-align-right .elementor-grid {
+    justify-content: center;
+  }
 }
