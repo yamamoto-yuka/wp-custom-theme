@@ -37,3 +37,4 @@ add_action('wp_enqueue_scripts', 'scripts_header');
 // Shortcodes
 // The require_once keyword is used to embed PHP code from another file
 require_once('shortcodes/practice-areas.php');
+require_once('shortcodes/team.php');
